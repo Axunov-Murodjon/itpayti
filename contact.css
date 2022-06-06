@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+.nav_logo p{
+    color: white;
+    font-size: 35px;
+}
+.nav_link p{
+    color: white;
+    font-size: 25px;
+}
+.nav_link form{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
