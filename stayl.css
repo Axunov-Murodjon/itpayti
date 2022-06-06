@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+    font-family: 'Roboto', sans-serif;
+}
+.katta_div{
+    width: 100%;
+    border-radius: 20px;
+    padding: 25px;
+    color: white;
+}
+.katta_div img{
+    border-radius: 100px;
+    align-items: center;
+}
+.rasm{
+    display: grid;
+    grid-template-columns: 70px auto ;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.kok{
+    grid-area: kok;
+    background-color: blueviolet;
+}
+.kulrang{
+    grid-area: kulrang;
+    background-color: rgb(83, 82, 82);
+}
+.oq{
+    grid-area: oq;
+    color: black;
+    background-color: white;
+}
+.oq p{
+    color: rgba(0, 0, 0, 0.445);
+}
+.qora{
+    grid-area: qora;
+    background-color: rgb(7, 6, 26);
+}
+.oqish{
+    grid-area: oqish;
+    background-color: rgb(184, 174, 159);
+}
+.katta_grid{
+    display: grid;
+    grid-template-areas: 
+    "kok kok kok kulrang oqish"
+    "oq qora qora qora oqish";
+    grid-gap: 25px;
+    margin: 100px;
+}
+@media screen and (max-width:1000px){
+    .katta_grid{
+        display: grid;
+        grid-template-areas: 
+        "kok kok kok kok kulrang"
+        "oq qora qora qora qora"
+        "oqish oqish oqish oqish oqish" ;
+        grid-gap: 25px;
+        margin: 100px;
+    }
+}
+@media screen and (max-width:800px){
+    .katta_grid{
+        display: grid;
+        grid-template-areas: 
+        "kok kok kok "
+        "kulrang kulrang kulrang"
+        "oq oq oq"
+        "qora qora qora"
+        "oqish oqish oqish"
+        ;
+        grid-gap: 25px;
+        margin: 100px;
+    }
+}
+h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+p{
+    color: rgba(240, 248, 255, 0.452);
+}
